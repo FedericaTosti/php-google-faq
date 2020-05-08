@@ -52,7 +52,18 @@
           require_once 'db.php';
           require_once 'functions.php';
 
-          printFaqs ($faqs);
+          echo "In questa pagina ci sono in totale ";
+          // funzione che stampa quante faqs ci sono
+          printFaqsCount ($faqs);
+          echo " domande, con relative risposte. <br>";
+
+
+          // funzione che stampa in pagina tutte le domande e le risposte
+          // printFaqs ($faqs);
+
+
+          // funzione che stampa in pagina singola faq scelta in ingresso
+          printFaqGet ($faqs, $faqGet);
 
         ?>
 
